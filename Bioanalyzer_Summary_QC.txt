@@ -1,0 +1,28 @@
+1	D4	1	5	Ok concentration & ratio
+2	D7	1	7	Good
+3	L4	1	1	Ok concentration
+4	L7	1	5	Ok concentration & ratio
+5	DL4	1	0	Bad
+6	DL7	1	7	Good
+7	HCL4	1	7	Good
+8	HCL7	1	7	Good
+9	MED	1	7	Good
+10	D4_CT	1	1	Ok concentration
+11	L4_CT	1	1	Ok concentration
+12	DL4_CT	1	1	Ok concentration
+13	HCL4_CT	1	7	Good
+14	MED_CT	1	1	Ok concentration
+15	D4	2	1	Ok concentration
+16	D7	2	7	Good
+17	L4	2	0	Bad
+18	L7	2	0	Bad
+19	DL4	2	0	Bad
+20	DL7	2	4	Ok Ratio
+21	HCL4	2	0	Bad
+22	HCL7	2	7	Good
+23	MED	2	7	Good
+24	D4_CT	2	5	Ok concentration & ratio
+25	L4_CT	2	5	Ok concentration & ratio
+26	DL4_CT	2	1	Ok concentration
+27	HCL4_CT	2	0	Bad
+28	MED_CT	2	0	Bad
