@@ -1,0 +1,102 @@
+<html><head><meta http-equiv="Content-Type" content="text/html charset=windows-1252"></head><body style="word-wrap: break-word; -webkit-nbsp-mode: space; -webkit-line-break: after-white-space;"><div></div><div><br></div><br><div><div>On Jul 11, 2014, at 7:53 PM, Philippe Azimzadeh &lt;<a href="mailto:pazimzadeh@gmail.com">pazimzadeh@gmail.com</a>&gt; wrote:</div><br class="Apple-interchange-newline"><blockquote type="cite">
+<span id="mailbox-conversation">Hey that sounds good, I'll take a crack at it!<div><br></div>
+<div>Philippe&nbsp;</div></span><div class="mailbox_signature">
+<br>Sent via carrier pigeon</div>
+<br><br><div class="gmail_quote"><p>On Fri, Jul 11, 2014 at 5:19 PM, Smith, Steven <span dir="ltr">&lt;<a href="mailto:StSmith@som.umaryland.edu" target="_blank">StSmith@som.umaryland.edu</a>&gt;</span> wrote:<br></p><blockquote class="gmail_quote" style="margin:0 0 0 .8ex;border-left:1px #ccc solid;padding-left:1ex;">
+<div style="word-wrap:break-word">
+<div style="margin:0px">Hey Philippe,</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">I just had an awesome idea. If you’re bored over the weekend, and want to try your programming skills out, why don’t you come up with a little script that outputs a “Quality Control (QC)” call for each of our samples? I’ve attached a
+ bioanalyzer summary table in numbers and also an easy-to-parse tab delimited format (metrics taken from the traces)... which can be used as the input to the script and then you can make the script output a single quality call for each sample.&nbsp;</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">So, after reading in each sample’s metrics, it should output a quality call., with the call being either “Good”, “Ok” and “Bad”. &nbsp;</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">I’d say a GOOD sample has:</div>
+<div style="margin:0px">-Concentration greater than 10 ng/ul (just for the hell of it)</div>
+<div style="margin:0px">-A RIN &gt; 8</div>
+<div style="margin:0px">-A 28s/18s &gt; 1</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">An “ok” sample has:</div>
+<div style="margin:0px">-Concentration greater than 10 ng/ul</div>
+<div style="margin:0px">-A RIN &lt; 8 <b>OR</b> a 28s/18s &lt; 1 (but not both)</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">A “bad” sample has:</div>
+<div style="margin:0px">-Concentration less than 10 ng/ul <b>OR</b> (RIN &lt;8 <b>AND</b> 28s/18s &lt; 1). &nbsp;Notice the difference between a bad and ok sample. A bad sample has crappy RIN AND ratio while an ok has just a crappy RIN OR ratio, but not both. The concentration
+ should be greater than 10 to be considered at least ok.&nbsp;</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">Feel free to play around with what makes a sample good, ok and bad (i.e., the thresholds of 10, 8, 1) … these are just numbers that kind of feel right. And if you’re really feeling up for it, make an output table that shows the replicate
+ calls side by side, and then gives an overall call for each sample together (for instance, an ok and a good sample is ok overall while a bad and ok sample is still ok).&nbsp;</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">This is only if you’re feeling up to it and want a little project over the weekend. It’d be helpful to get a feel for what kinds of applications you can make for what you’ve been learning. If not/too busy/lazy, I’ll make the QC calls
+ so its no big deal (probably by hand, but this screams script especially if you’re going to do it repeatedly for a large # of samples).&nbsp;</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">Also, feel free to double check that I transcribed the trace info correctly. I didnt check yet.&nbsp;</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px">Steve</div>
+<div style="margin:0px"><br></div>
+<div style="margin:0px"></div>
+</div>
+<div style="word-wrap:break-word">
+<div style="margin:0px"></div>
+</div>
+<div style="word-wrap:break-word">
+<div style="margin:0px"></div>
+<div><br></div>
+<div>
+<div>On Jul 11, 2014, at 4:36 PM, Philippe Azimzadeh &lt;<a href="mailto:pazimzadeh@gmail.com">pazimzadeh@gmail.com</a>&gt; wrote:</div>
+<br class="x_Apple-interchange-newline"><blockquote type="cite">
+<div style="word-wrap:break-word">
+<div>Ok. I’m assuming that if the peaks for ribosomal RNA are low then that indicates lower quality for the total RNA? If that’s true then it doesn’t look great for the sample that popped open on the first day (#5) since the replicate looks about the same (#19).
+ But I don’t know if my assumption is right.</div>
+<div><br></div>
+<br><div>
+<div>On Jul 11, 2014, at 4:08 PM, Smith, Steven &lt;<a href="mailto:StSmith@som.umaryland.edu">StSmith@som.umaryland.edu</a>&gt; wrote:</div>
+<br class="x_Apple-interchange-newline"><blockquote type="cite">
+<div dir="auto" style="font-family:Helvetica; font-size:12px; font-style:normal; font-variant:normal; font-weight:normal; letter-spacing:normal; line-height:normal; orphans:auto; text-align:start; text-indent:0px; text-transform:none; white-space:normal; widows:auto; word-spacing:0px">
+<div>Here are our results. I'll summarize this in a table in a little bit. Overall I think there's some usable data.&nbsp;<br><br><div>Steven Smith</div>
+<div><br></div>
+Sent from my iPhone</div>
+<div>
+<br>
+Begin forwarded message:<br><br></div>
+<blockquote type="cite">
+<b>From:</b><span class="x_Apple-converted-space">&nbsp;</span>"Klega, Kelly" &lt;<a href="mailto:KKlega@som.umaryland.edu" style="color:purple; text-decoration:underline">KKlega@som.umaryland.edu</a>&gt;<br><b>Date:</b><span class="x_Apple-converted-space">&nbsp;</span>July 11, 2014 at 3:50:58 PM EDT<br><b>To:</b><span class="x_Apple-converted-space">&nbsp;</span>"Smith, Steven" &lt;<a href="mailto:StSmith@som.umaryland.edu" style="color:purple; text-decoration:underline">StSmith@som.umaryland.edu</a>&gt;<br><b>Subject:</b><span class="x_Apple-converted-space">&nbsp;</span><b>Bioanalyzer RNA nano results</b><br><br></blockquote>
+<div><span></span></div>
+<blockquote type="cite">
+<div class="x_WordSection1" style="">
+<div style="margin:0in 0in 0.0001pt; font-size:11pt; font-family:Calibri,sans-serif">
+Hi Steve. Please find attached the results from your bioanalyzer runs.</div>
+<div style="margin:0in 0in 0.0001pt; font-size:11pt; font-family:Calibri,sans-serif">
+&nbsp;</div>
+<div style="margin:0in 0in 0.0001pt; font-size:11pt; font-family:Calibri,sans-serif">
+Enjoy!</div>
+<div style="margin:0in 0in 0.0001pt; font-size:11pt; font-family:Calibri,sans-serif">
+Kelly</div>
+</div>
+</blockquote>
+<blockquote type="cite">
+<div></div>
+</blockquote>
+<span>&lt;SteveSmith1_Eukaryote Total RNA Nano_DE72902977_2014-07-11_14-24-49.pdf&gt;</span>
+<blockquote type="cite">
+<div></div>
+</blockquote>
+<blockquote type="cite">
+<div></div>
+</blockquote>
+<span>&lt;SteveSmith2_Eukaryote Total RNA Nano_DE72902977_2014-07-11_14-58-38.pdf&gt;</span>
+<blockquote type="cite">
+<div></div>
+</blockquote>
+<blockquote type="cite">
+<div></div>
+</blockquote>
+<span>&lt;SteveSmith3_Eukaryote Total RNA Nano_DE72902977_2014-07-11_15-29-14.pdf&gt;</span>
+</div>
+</blockquote>
+</div>
+<br></div>
+</blockquote>
+</div>
+<br></div>
+<mailbox-attach src="mailbox://attachment_download/F57A6607-939B-43DB-A3AD-63CCEF334E00/EF57A6607-939B-43DB-A3AD-63CCEF334E00_1473368370914062529/2" filename="Bioanalyzer_Summary.numbers.zip" mime="application/zip" size="132951">&lt;Bioanalyzer_Summary.numbers.zip&gt;</mailbox-attach><mailbox-attach src="mailbox://attachment_download/F57A6607-939B-43DB-A3AD-63CCEF334E00/EF57A6607-939B-43DB-A3AD-63CCEF334E00_1473368370914062529/3" filename="Bioanalyzer_Summary.txt" mime="text/plain" size="634">&lt;Bioanalyzer_Summary.txt&gt;</mailbox-attach></blockquote></div><br></blockquote></div><br></body></html>

@@ -1,0 +1,28 @@
+Sample	1	D4	Ok	
+Sample	2	D7	Good	
+Sample	3	L4	Ok	
+Sample	4	L7	Ok	
+Sample	5	DL4	Bad	RIN is N/A
+Sample	6	DL7	Good	
+Sample	7	HCL4	Ok	
+Sample	8	HCL7	Good	
+Sample	9	MED	Good	
+Sample	10	D4_CT	Ok	
+Sample	11	L4_CT	Ok	
+Sample	12	DL4_CT	Ok	
+Sample	13	HCL4_CT	Good	
+Sample	14	MED_CT	Ok	
+Sample	15	D4	Ok	
+Sample	16	D7	Good	
+Sample	17	L4	Ok	
+Sample	18	L7	Bad	
+Sample	19	DL4	Bad	RIN is N/A
+Sample	20	DL7	Bad	
+Sample	21	HCL4	Bad	RIN is N/A
+Sample	22	HCL7	Good	
+Sample	23	MED	Good	
+Sample	24	D4_CT	Ok	
+Sample	25	L4_CT	Ok	
+Sample	26	DL4_CT	Ok	
+Sample	27	HCL4_CT	Bad	RIN is N/A
+Sample	28	MED_CT	Bad	RIN is N/A
